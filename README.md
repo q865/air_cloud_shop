@@ -1,36 +1,106 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎈 air_cloud_shop
 
-## Getting Started
+🦋 _Легче, чем воздух. Ярче, чем радуга._
 
-First, run the development server:
+**air_cloud_shop** — это сайт для бренда @air_cloud_msk, который занимается оформлением праздников и доставкой гелиевых шаров в Москве. Мы создаём яркий, лёгкий и удобный веб-интерфейс, который помогает клиентам выбрать идеальный набор шаров, посмотреть примеры оформлений и оформить заказ за несколько кликов.
+
+---
+
+## 💡 Идея проекта
+
+Цель проекта — сделать витрину товаров из Telegram-канала, где посты автоматически превращаются в карточки на сайте. Мы используем:
+
+- **Next.js 14 (App Router)** + TypeScript
+- **TailwindCSS** для быстрого и современного UI
+- **JSON-файлы** как источник данных (эмуляция Telegram-постов)
+- Планируем интеграцию с **Telegram Bot API** и CMS
+
+---
+
+## 🚀 Как подключиться к разработке
+
+Если ты хочешь внести вклад — мы будем рады! Вот как начать:
+
+### 1. Форкни репозиторий
+
+Нажми кнопку **Fork** в правом верхнем углу на [GitHub](https://github.com/q865/air_cloud_shop), чтобы создать свою копию проекта.
+
+### 2. Клонируй форк к себе на машину
+
+```bash
+git clone git@github.com:ТВОЙ_USERNAME/air_cloud_shop.git
+cd air_cloud_shop
+```
+
+### 3. Установи зависимости
+
+```bash
+npm install
+```
+
+### 4. Запусти проект
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Проект будет доступен по адресу: [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🔧 Создание Pull Request
 
-## Learn More
+После внесения изменений:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+git checkout -b имя_твоей_ветки
+# сделай свои изменения и коммиты
+git push origin имя_твоей_ветки
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Затем создай **Pull Request** через интерфейс GitHub. Мы всё рассмотрим!
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 📁 Структура проекта
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+src/
+├── app/             # Страницы Next.js
+├── components/      # UI-компоненты
+├── data/            # JSON-файлы с карточками
+├── styles/          # Tailwind + глобальные стили
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 📸 Пример карточки
+
+```json
+{
+  "id": 1,
+  "text": "🎁 Коробка-сюрприз на день рождения\nЦена: 2800р",
+  "date": "2025-04-28",
+  "media": [
+    {
+      "path": "/media/media_1.jpg",
+      "type": "image"
+    }
+  ],
+  "reactions": [
+    { "emoji": "👍", "count": 12 }
+  ],
+  "views": 320
+}
+```
+
+---
+
+## 🤝 Контакты
+
+- Telegram: [@air_cloud_msk](https://t.me/air_cloud_msk)
+- Вопросы по разработке: открой [issue](https://github.com/q865/air_cloud_shop/issues)
+
+---
+
+_Спасибо, что хочешь присоединиться. Вместе сделаем проект красивым, как радуга!_ 🌈
